@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+li a{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+li a:hover{
+    transition: 1s;
+    transform: scale(1.5);
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho{
+    background-color: red;
+    width: 100%;
+}
+
+#img-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: black;
+}
+
+#titulo-foto{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900    ;
+}
+
+#cabecalho img{
+    width: 100px;
+    height: 100px;
+   border-radius: 100%;
+}
+
+#nav-cabecalho{ 
+    width: 100%;
+}
+
+#nav-cabecalho ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 0; 
+}
+
+
+.pai-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+   
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1 {
+    margin: 30px 0px 0px 80px;
+}
+
+.box {
+    display: grid;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+
+
+.box img{
+    width: 100%;
+}
+.box:hover{
+    transition: 1s;
+    background-color: black;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: red;
+}
+
+#nav-rodape #titulo-foto{
+    justify-content: left;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+#ul-rodape{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-around;
+    padding: 20px 70px 70px 70px;
+    background-color: red;
+}
+
+ul #parte1, #parte2, #parte3{
+    text-align: center;
+}
+
+#nav-rodape img{
+    width: 70px;
+    height: 70px;
+   border-radius: 100%;
+}
+
+#ul-rodape li, h3{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+#parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parte4 i {
+    font-size: 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+#ul-rodape li:hover{
+   transition: 1s;
+
+}
+
+@media(max-width: 800px){
+    h1{
+        color: red;
+    }
+
+    .pai-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #ul-rodape{
+        display: block;
+    }
+    #nav-cabecalho ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        list-style: none;
+        font-size: 15px;
+        padding: 10px 0; 
+        flex-direction: column;
+    }
+    
+}
